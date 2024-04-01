@@ -1,0 +1,225 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+
+    
+}
+
+/*general */
+html{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    
+    
+}
+
+.dancing{
+    font-family: "Dancing Script", cursive;
+    
+}
+
+/*header & value p*/
+
+.headerValuePContainer{
+   min-height: 120vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6D071A;
+    line-height: 2.5rem;
+
+}
+
+
+
+header h1{
+    color: #eee;
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+header ul {
+    min-width: 30vw;
+    display: flex;
+    justify-content: space-between;
+   
+    
+    
+}
+
+header ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px 5px 15px;
+    
+    
+}
+
+header ul li a {
+    color: #eee;
+    font-size: 1.5rem;
+   
+}
+
+.valueP{
+    min-height: 100vh;
+    
+    background-image: url(light_catchycolors_glow_candle_maroon_bordeaux_flame_zen-880962.jpg!d);
+    background-repeat:  no-repeat ;
+    background-position: center;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.valueP .valuePText .valuePTextp1{
+   color: #eee;
+   font-size: 1.5rem;
+   text-align: center;
+    
+}
+
+.valuePTextp2 {
+    color: #eee;
+    font-size: 2.2rem;
+    
+}
+
+
+/* Naomi */
+
+.naomi-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    
+}
+
+.naomi-container h2{
+    color: #6D071A;
+    font-size: 2rem;
+    
+}
+
+.naomi-container p{
+   
+    color: #6D071A;
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+   
+}
+
+/* prestation*/
+.prestation {
+    background-color: #6D071A;
+}
+.prestation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 75vw;
+}
+
+.prestation h2 {
+    color: #eee;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.prestation p {
+    color: #eee;
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+
+/* footer */
+
+footer{
+    display: grid;
+    max-width: 90vw;
+    grid-template-columns: 10;
+   grid-template-rows: 3;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow-x: hidden;
+}
+
+footer p{
+    grid-column-start: 3;
+    margin-top: 2rem;
+    text-align: center;
+    color: #6D071A;
+    max-width: 50vw;
+}
+.image{
+    max-width: 10vw;
+    grid-column-start: 1;
+   
+}
+
+.image img{
+    width: 100%;
+    border-radius: 20px;
+    margin-left: 10vw;
+}
+
+/* media screens */ 
+
+@media screen and (max-width : 800px) {
+
+    .valueP{
+        background-position: right;
+    }
+
+    header{
+        display: none;
+    }
+
+    footer{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer p{
+        text-align: left;
+    
+    }
+
+    .image img{
+        display: none;
+    }
+    
+   
+}
